@@ -1,0 +1,17 @@
+---
+id: berlin-lor-population
+name: Berlin LOR population
+metadata:
+  - ownership:
+  - schema:
+description:
+input_ports:
+output_ports:
+metrics:
+  - quality:
+  - operational:
+classification:
+tags:
+  - berlin
+  - lor
+  - population
