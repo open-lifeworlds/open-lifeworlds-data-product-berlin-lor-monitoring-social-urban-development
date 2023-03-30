@@ -6,6 +6,104 @@ metadata:
   - schema:
 description:
 input_ports:
+  - id: berlin-lor-geodata
+    metadata:
+      name: Berlin LOR geodata
+      author: Open Lifeworlds
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/tree/main/data
+      license: CC-BY-4.0
+      updated: 2023-07-22
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-districts/berlin-lor-districts.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-forecast-areas-from-2021/berlin-lor-forecast-areas-from-2021.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-district-regions-from-2021/berlin-lor-district-regions-from-2021.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson
+  - id: berlin-lor-monitoring-social-urban-development-2021
+    metadata:
+      name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2021
+      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/
+      license:
+      updated: 2020-12-31
+    files:
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_1_gesamtindex_soziale_ungleichheit_sdi_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-1_index-indikatoren_anteilswerte_auf_planungsraum-ebene_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-2_index-indikatoren_anteilswerte_auf_bezirksregionen-ebene_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-3_index-indikatoren_auf_ebene_der_bezirke_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_3_index-indikatoren_z-werte_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-2_kontext-indikatoren_anteile_bzr_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-3_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-1-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-2-1_kontext-indikatoren_anteile_bzr_mss_2021.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-3-1_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx
+  - id: berlin-lor-monitoring-social-urban-development-2019
+    metadata:
+      name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2019
+      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/
+      license:
+      updated: 2018-12-31
+    files:
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/1-sdi_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-1-indexind_anteile_plr_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-2-indexind_anteile_bzr_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-3-indexind_anteile_bezirke_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/3-indexind_z_wertemss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.1.kontextind_anteile_plr_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.2.kontextind_anteile_bzr_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.3.kontextind_anteile_bezirke_mss2019.xlsx
+  - id: berlin-lor-monitoring-social-urban-development-2017
+    metadata:
+      name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2017
+      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/
+      license:
+      updated: 2016-12-31
+    files:
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/1-sdi_mss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/2-1-indexind_anteile_plr_mss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-2-indexind_anteile_bzr_mss2019.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/2.3.indexind_anteile_bezirke_mss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/3-indexind_z_wertemss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-1-kontextind_anteile_plr_mss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-2-kontextind_anteile_bzr_mss2017.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-3-kontextind_anteile_bezirke_mss2017.xlsx
+  - id: berlin-lor-monitoring-social-urban-development-2015
+    metadata:
+      name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2015
+      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/
+      license:
+      updated: 2014-12-31
+    files:
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/1-sdi_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-1-indexind_anteile_plr_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-2-indexind_anteile_bzr_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-3-indexind_anteile_bezirke_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/3-indexind_z_wertemss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-1-kontextind_anteile_plr_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-2-kontextind_anteile_bzr_mss2015.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-3-kontextind_anteile_bezirke_mss2015.xlsx
+  - id: berlin-lor-monitoring-social-urban-development-2013
+    metadata:
+      name: Bericht Monitoring Soziale Stadtentwicklung Berlin 2013
+      author: Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen
+      url: https://www.berlin.de/sen/sbw/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/
+      license:
+      updated: 2012-12-31
+    files:
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/1-sdi_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-1-indexind_anteile_plr_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-2-indexind_anteile_bzr_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-3-indexind_anteile_bezirke_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/3-indexind_z_wertemss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-1-kontextind_anteile_plr_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-2-kontextind_anteile_bzr_mss2013.xlsx
+      - https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-3-kontextind_anteile_bezirke_mss2013.xlsx
 output_ports:
 metrics:
   - quality:
