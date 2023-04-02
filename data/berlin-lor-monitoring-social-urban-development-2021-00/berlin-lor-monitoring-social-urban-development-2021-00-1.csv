@@ -1,4 +1,4 @@
-id,name,inhabitants,status_index,status_index_klasse,dynamik_index,dynamik_index_klasse,status_dynamik_index,status_dynamik_index_klasse
+id,name,inhabitants,status_index,status_index_class,dynamic_index,dynamic_index_class,status_dynamic_index,status_dynamic_index_class
 01100101,Stülerstraße,3419.0,2.0,mittel,-,negativ,2-,"Status mittel , Dynamik negativ"
 01100102,Großer Tiergarten,1791.0,1.0,hoch,+/-,stabil,1+/-,"Status hoch , Dynamik stabil"
 01100103,Lützowstraße,5211.0,2.0,mittel,+/-,stabil,2+/-,"Status mittel , Dynamik stabil"

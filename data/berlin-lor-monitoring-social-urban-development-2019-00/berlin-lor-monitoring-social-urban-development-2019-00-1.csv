@@ -1,4 +1,4 @@
-id,name,inhabitants,status_index,status_index_klasse,dynamik_index,dynamik_index_klasse,status_dynamik_index,status_dynamik_index_klasse
+id,name,inhabitants,status_index,status_index_class,dynamic_index,dynamic_index_class,status_dynamic_index,status_dynamic_index_class
 01011101,Stülerstraße,3384.0,2.0,mittel,+/-,stabil,2+/-,"Status mittel, Dynamik stabil"
 01011103,Lützowstraße,5038.0,2.0,mittel,+/-,stabil,2+/-,"Status mittel, Dynamik stabil"
 01011104,Körnerstraße,4759.0,2.0,mittel,+/-,stabil,2+/-,"Status mittel, Dynamik stabil"
