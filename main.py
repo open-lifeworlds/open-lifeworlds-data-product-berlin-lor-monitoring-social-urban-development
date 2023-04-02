@@ -40,6 +40,7 @@ def main(argv):
     manifest_path = os.path.join(script_path, "data-product.yml")
     raw_path = os.path.join(script_path, "raw")
     workspace_path = os.path.join(script_path, "workspace")
+    data_path = os.path.join(script_path, "data")
 
     #
     # Extract
@@ -51,7 +52,7 @@ def main(argv):
     # Transform
     #
 
-    copy_data(manifest_path=manifest_path, results_path=raw_path, clean=clean, quiet=quiet)
+    copy_data(source_path=raw_path, results_path=workspace_path, clean=clean, quiet=quiet)
     convert_data_to_csv(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
     blend_data(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
 

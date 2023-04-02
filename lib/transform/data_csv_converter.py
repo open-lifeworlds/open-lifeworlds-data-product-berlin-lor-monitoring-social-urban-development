@@ -1,5 +1,4 @@
 import os
-import re
 
 import pandas as pd
 
@@ -42,8 +41,8 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
 
             sheets = [f"1.SDI_MSS{year}"]
             skiprows = 3
-            names = ["id", "name", "inhabitants", "status_index", "status_index_klasse", "dynamik_index",
-                     "dynamik_index_klasse", "status_dynamik_index", "status_dynamik_index_klasse"]
+            names = ["id", "name", "inhabitants", "status_index", "status_index_class", "dynamic_index",
+                     "dynamic_index_class", "status_dynamic_index", "status_dynamic_index_class"]
         elif source_file_name.endswith(f"{year}-{half_year}-2-1"):
 
             sheets = [f"2.1.IndexInd_Ant_PLR_MSS{year}"]
