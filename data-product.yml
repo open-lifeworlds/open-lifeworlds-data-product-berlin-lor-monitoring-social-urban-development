@@ -31,7 +31,7 @@ metadata:
     - k11_migration_volume: migration volume
     - k12_balance_of_migration: balance of migration
     - k13_balance_of_migration_of_children_below_6: balance of migration of children below 6 years old
-description:
+description: This data product provides Berlin monitoring social urban development data on different LOR hierarchy levels
 input_ports:
   - id: berlin-lor-geodata
     metadata:

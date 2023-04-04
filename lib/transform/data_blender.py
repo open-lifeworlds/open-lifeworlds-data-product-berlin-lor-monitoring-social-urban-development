@@ -258,27 +258,30 @@ def read_geojson_file(file_path):
 
 def write_geojson_file(file_path, statistic_name, geojson_content, clean, quiet):
     if not os.path.exists(file_path) or clean:
-        file_name = os.path.basename(file_path)
+
+        # Make results path
+        path_name = os.path.dirname(file_path)
+        os.makedirs(os.path.join(path_name), exist_ok=True)
 
         with open(file_path, "w", encoding="utf-8") as geojson_file:
             json.dump(geojson_content, geojson_file, ensure_ascii=False)
 
             if not quiet:
-                print(f"✓ Blend data from {statistic_name} into {file_name}")
+                print(f"✓ Blend data from {statistic_name} into {os.path.basename(file_path)}")
 
 
 def write_json_file(file_path, statistic_name, json_content, clean, quiet):
     if not os.path.exists(file_path) or clean:
-        path_name = os.path.dirname(file_path)
-        file_name = os.path.basename(file_path)
 
+        # Make results path
+        path_name = os.path.dirname(file_path)
         os.makedirs(os.path.join(path_name), exist_ok=True)
 
         with open(file_path, "w", encoding="utf-8") as json_file:
             json.dump(json_content, json_file, ensure_ascii=False)
 
             if not quiet:
-                print(f"✓ Aggregate data from {statistic_name} into {file_name}")
+                print(f"✓ Aggregate data from {statistic_name} into {os.path.basename(file_path)}")
 
 
 def extend_districts(statistics, year, half_year, statistic_name, statistic, geojson):

@@ -377,14 +377,14 @@ def convert_file_to_csv_districts(source_file_paths, clean=False, quiet=False):
 
             # Write csv file
             if dataframe.shape[0] > 0:
-                dataframe.to_csv(file_path_csv, index=False)
+                dataframe.to_csv(os.path.basename(file_path_csv), index=False)
                 if not quiet:
-                    print(f"✓ Convert {file_path_csv}")
+                    print(f"✓ Convert {os.path.basename(file_path_csv)}")
             else:
                 if not quiet:
                     print(dataframe.head())
-                    print(f"✗️ Empty {file_path_csv}")
+                    print(f"✗️ Empty {os.path.basename(file_path_csv)}")
         except Exception as e:
             print(f"✗️ Exception: {str(e)}")
     elif not quiet:
-        print(f"✓ Already exists {file_path_csv}")
+        print(f"✓ Already exists {os.path.basename(file_path_csv)}")
