@@ -77,14 +77,12 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
         half_year = statistic_name.split(sep="-")[7]
 
         # Load statistics
-        statistic_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-1.csv"))
-        statistic_2_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-1.csv"))
-        statistic_2_2 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-2.csv"))
-        statistic_2_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-3.csv"))
-        statistic_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-3.csv"))
-        statistic_4_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-1.csv"))
-        statistic_4_2 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-2.csv"))
-        statistic_4_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-3.csv"))
+        statistics_planning_areas = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-planning-areas.csv"))
+        statistics_district_regions = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-district-regions.csv"))
+        statistics_districts = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-districts.csv"))
 
         # Extend districts
         geojson_lor_districts_extended, statistics_lor_districts = extend_districts(
@@ -92,8 +90,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_2_3=statistic_2_3,
-            statistic_4_3=statistic_4_3,
+            statistic=statistics_districts,
             geojson=geojson_lor_districts
         )
 
@@ -103,8 +100,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_2_2=statistic_2_2,
-            statistic_4_2=statistic_4_2,
+            statistic=statistics_district_regions,
             geojson=geojson_lor_district_regions
         )
 
@@ -114,10 +110,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_1=statistic_1,
-            statistic_2_1=statistic_2_1,
-            statistic_3=statistic_3,
-            statistic_4_1=statistic_4_1,
+            statistic=statistics_planning_areas,
             geojson=geojson_lor_planning_areas
         )
 
@@ -160,47 +153,40 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
         half_year = statistic_name.split(sep="-")[7]
 
         # Load statistics
-        statistic_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-1.csv"))
-        statistic_2_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-1.csv"))
-        statistic_2_2 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-2.csv"))
-        statistic_2_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-2-3.csv"))
-        statistic_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-3.csv"))
-        statistic_4_1 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-1.csv"))
-        statistic_4_2 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-2.csv"))
-        statistic_4_3 = read_csv_file(os.path.join(source_path, statistic_path, f"{statistic_name}-4-3.csv"))
+        statistics_planning_areas = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-planning-areas.csv"))
+        statistics_district_regions = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-district-regions.csv"))
+        statistics_districts = read_csv_file(
+            os.path.join(source_path, statistic_path, f"{statistic_name}-districts.csv"))
 
         # Extend districts
-        geojson_lor_districts_extended, statistics_lor_planning_areas = extend_districts_post_2020(
+        geojson_lor_districts_extended, statistics_lor_planning_areas = extend_districts(
             statistics=statistics_lor_planning_areas,
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_2_3=statistic_2_3,
-            statistic_4_3=statistic_4_3,
+            statistic=statistics_districts,
             geojson=geojson_lor_districts
         )
 
         # Extend district regions
-        geojson_lor_district_regions_extended, statistics_lor_planning_areas = extend_district_regions_post_2020(
+        geojson_lor_district_regions_extended, statistics_lor_planning_areas = extend_district_regions(
             statistics=statistics_lor_planning_areas,
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_2_2=statistic_2_2,
-            statistic_4_2=statistic_4_2,
+            statistic=statistics_district_regions,
             geojson=geojson_lor_district_regions
         )
 
         # Extend planning areas
-        geojson_lor_planning_areas_extended, statistics_lor_planning_areas = extend_planning_areas_post_2020(
+        geojson_lor_planning_areas_extended, statistics_lor_planning_areas = extend_planning_areas(
             statistics=statistics_lor_planning_areas,
             year=year,
             half_year=half_year,
             statistic_name=statistic_name,
-            statistic_1=statistic_1,
-            statistic_2_1=statistic_2_1,
-            statistic_3=statistic_3,
-            statistic_4_1=statistic_4_1,
+            statistic=statistics_planning_areas,
             geojson=geojson_lor_planning_areas
         )
 
@@ -260,7 +246,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
 def read_csv_file(file_path):
     if os.path.exists(file_path):
         with open(file_path, "r") as csv_file:
-            return pd.read_csv(csv_file)
+            return pd.read_csv(csv_file, dtype={"id": "str"})
     else:
         return None
 
@@ -295,15 +281,11 @@ def write_json_file(file_path, statistic_name, json_content, clean, quiet):
                 print(f"✓ Aggregate data from {statistic_name} into {file_name}")
 
 
-def extend_districts(statistics, year, half_year,
-                     statistic_name, statistic_2_3, statistic_4_3,
-                     geojson):
+def extend_districts(statistics, year, half_year, statistic_name, statistic, geojson):
     geojson_extended = copy.deepcopy(geojson)
 
     # Check for missing files
-    if statistic_2_3 is None:
-        print(f"✗️ No district data in {statistic_name}")
-    if statistic_4_3 is None:
+    if statistic is None:
         print(f"✗️ No district data in {statistic_name}")
 
     # Check if file needs to be created
@@ -313,23 +295,15 @@ def extend_districts(statistics, year, half_year,
         area_sqkm = area_sqm / 1_000_000
 
         # Filter statistics
-        statistic_2_3_filtered = statistic_2_3.loc[
-            (statistic_2_3["id"] == int(feature_id))] if statistic_2_3 is not None else None
-        statistic_4_3_filtered = statistic_4_3.loc[
-            (statistic_4_3["id"] == int(feature_id))] if statistic_4_3 is not None else None
+        statistic_filtered = statistic[statistic["id"].astype(str).str.startswith(feature_id)]
 
         # Check for missing data
-        if statistic_2_3_filtered is not None and statistic_2_3_filtered.shape[0] == 0:
-            print(f"✗️ No district data in {statistic_name} for id={feature_id}")
-        if statistic_4_3_filtered is not None and statistic_4_3_filtered.shape[0] == 0:
+        if statistic_filtered.shape[0] == 0 or \
+                int(statistic_filtered["inhabitants"].sum()) == 0:
             print(f"✗️ No district data in {statistic_name} for id={feature_id}")
 
         # Blend data
-        feature = blend_district_data(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_2_3_filtered=statistic_2_3_filtered,
-            statistic_4_3_filtered=statistic_4_3_filtered
-        )
+        feature = blend_data_into_feature(feature=feature, area_sqkm=area_sqkm, statistic_filtered=statistic_filtered)
 
         # Build structure
         if year not in statistics:
@@ -358,16 +332,12 @@ def extend_districts(statistics, year, half_year,
     return geojson_extended, statistics
 
 
-def extend_district_regions(statistics, year, half_year,
-                            statistic_name, statistic_2_2, statistic_4_2,
-                            geojson):
+def extend_district_regions(statistics, year, half_year, statistic_name, statistic, geojson):
     geojson_extended = copy.deepcopy(geojson)
 
     # Check for missing files
-    if statistic_2_2 is None:
-        print(f"✗️ No district region data in {statistic_name}-2-2")
-    if statistic_4_2 is None:
-        print(f"✗️ No district region data in {statistic_name}-4-2")
+    if statistic is None:
+        print(f"✗️ No district region data in {statistic_name}")
 
     # Check if file needs to be created
     for feature in geojson_extended["features"]:
@@ -376,23 +346,15 @@ def extend_district_regions(statistics, year, half_year,
         area_sqkm = area_sqm / 1_000_000
 
         # Filter statistics
-        statistic_2_2_filtered = statistic_2_2.loc[
-            (statistic_2_2["id"] == int(feature_id))] if statistic_2_2 is not None else None
-        statistic_4_2_filtered = statistic_4_2.loc[
-            (statistic_4_2["id"] == int(feature_id))] if statistic_4_2 is not None else None
+        statistic_filtered = statistic[statistic["id"].astype(str).str.startswith(feature_id)]
 
         # Check for missing data
-        if statistic_2_2_filtered is not None and statistic_2_2_filtered.shape[0] == 0:
-            print(f"✗️ No district region data in {statistic_name}-2-2 for id={feature_id}")
-        if statistic_4_2_filtered is not None and statistic_4_2_filtered.shape[0] == 0:
-            print(f"✗️ No district region data in {statistic_name}-4-2 for id={feature_id}")
+        if statistic_filtered.shape[0] == 0 or \
+                int(statistic_filtered["inhabitants"].sum()) == 0:
+            print(f"✗️ No district region data in {statistic_name} for id={feature_id}")
 
         # Blend data
-        feature = blend_district_region_data(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_2_2_filtered=statistic_2_2_filtered,
-            statistic_4_2_filtered=statistic_4_2_filtered
-        )
+        feature = blend_data_into_feature(feature=feature, area_sqkm=area_sqkm, statistic_filtered=statistic_filtered)
 
         # Build structure
         if year not in statistics:
@@ -421,20 +383,12 @@ def extend_district_regions(statistics, year, half_year,
     return geojson_extended, statistics
 
 
-def extend_planning_areas(statistics, year, half_year,
-                          statistic_name, statistic_1, statistic_2_1, statistic_3, statistic_4_1,
-                          geojson):
+def extend_planning_areas(statistics, year, half_year, statistic_name, statistic, geojson):
     geojson_extended = copy.deepcopy(geojson)
 
     # Check for missing files
-    if statistic_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-1")
-    if statistic_2_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-2-2")
-    if statistic_3 is None:
-        print(f"✗️ No planning area data in {statistic_name}-3")
-    if statistic_4_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-4-1")
+    if statistic is None:
+        print(f"✗️ No planning area data in {statistic_name}")
 
     # Check if file needs to be created
     for feature in geojson_extended["features"]:
@@ -443,33 +397,15 @@ def extend_planning_areas(statistics, year, half_year,
         area_sqkm = area_sqm / 1_000_000
 
         # Filter statistics
-        statistic_1_filtered = statistic_1.loc[
-            (statistic_1["id"] == int(feature_id))] if statistic_1 is not None else None
-        statistic_2_1_filtered = statistic_2_1.loc[
-            (statistic_2_1["id"] == int(feature_id))] if statistic_2_1 is not None else None
-        statistic_3_filtered = statistic_3.loc[
-            (statistic_3["id"] == int(feature_id))] if statistic_3 is not None else None
-        statistic_4_1_filtered = statistic_4_1.loc[
-            (statistic_4_1["id"] == int(feature_id))] if statistic_4_1 is not None else None
+        statistic_filtered = statistic[statistic["id"].astype(str).str.startswith(feature_id)]
 
         # Check for missing data
-        if statistic_1_filtered is not None and statistic_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-1 for id={feature_id}")
-        if statistic_2_1_filtered is not None and statistic_2_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-2-2 for id={feature_id}")
-        if statistic_3_filtered is not None and statistic_3_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-3 for id={feature_id}")
-        if statistic_4_1_filtered is not None and statistic_4_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-4-1 for id={feature_id}")
+        if statistic_filtered.shape[0] == 0 or \
+                int(statistic_filtered["inhabitants"].sum()) == 0:
+            print(f"✗️ No planning area data in {statistic_name} for id={feature_id}")
 
         # Blend data
-        feature = blend_planning_area_data(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_1_filtered=statistic_1_filtered,
-            statistic_2_1_filtered=statistic_2_1_filtered,
-            statistic_3_filtered=statistic_3_filtered,
-            statistic_4_1_filtered=statistic_4_1_filtered
-        )
+        feature = blend_data_into_feature(feature=feature, area_sqkm=area_sqkm, statistic_filtered=statistic_filtered)
 
         # Build structure
         if year not in statistics:
@@ -498,284 +434,12 @@ def extend_planning_areas(statistics, year, half_year,
     return geojson_extended, statistics
 
 
-def extend_districts_post_2020(statistics, year, half_year, statistic_name, statistic_2_3, statistic_4_3, geojson):
-    geojson_extended = copy.deepcopy(geojson)
-
-    # Check for missing files
-    if statistic_2_3 is None:
-        print(f"✗️ No district data in {statistic_name}-2-3")
-    if statistic_4_3 is None:
-        print(f"✗️ No district data in {statistic_name}-4-3")
-
-    # Check if file needs to be created
-    for feature in geojson_extended["features"]:
-        feature_id = feature["properties"]["id"]
-        area_sqm = feature["properties"]["area"]
-        area_sqkm = area_sqm / 1_000_000
-
-        # Filter statistics
-        statistic_2_3_filtered = statistic_2_3.loc[
-            (statistic_2_3["id"] == int(feature_id))] if statistic_2_3 is not None else None
-        statistic_4_3_filtered = statistic_4_3.loc[
-            (statistic_4_3["id"] == int(feature_id))] if statistic_4_3 is not None else None
-
-        # Check for missing data
-        if statistic_2_3_filtered is not None and statistic_2_3_filtered.shape[0] == 0:
-            print(f"✗️ No district data in {statistic_name}-2-3 for id={feature_id}")
-        if statistic_4_3_filtered is not None and statistic_4_3_filtered.shape[0] == 0:
-            print(f"✗️ No district data in {statistic_name}-4-3 for id={feature_id}")
-
-        # Blend data
-        feature = blend_district_data(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_2_3_filtered=statistic_2_3_filtered,
-            statistic_4_3_filtered=statistic_4_3_filtered
-        )
-
-        # Build structure
-        if year not in statistics:
-            statistics[year] = {}
-        if half_year not in statistics[year]:
-            statistics[year][half_year] = {}
-
-        # Add properties
-        statistics[year][half_year][feature_id] = feature["properties"]
-
-    # Calculate average and median values
-    for year, half_years in statistics.items():
-        for half_year, feature_ids in half_years.items():
-            values = {}
-
-            for feature_id, properties in feature_ids.items():
-                for property_name, property_value in properties.items():
-                    if property_name in statistic_properties:
-                        if property_name not in values:
-                            values[property_name] = []
-                        values[property_name].append(property_value)
-
-            statistics[year][half_year]["average"] = {key: stats.mean(lst) for key, lst in values.items()}
-            statistics[year][half_year]["median"] = {key: stats.median(lst) for key, lst in values.items()}
-
-    return geojson_extended, statistics
-
-
-def extend_district_regions_post_2020(statistics, year, half_year,
-                                      statistic_name, statistic_2_2, statistic_4_2,
-                                      geojson):
-    geojson_extended = copy.deepcopy(geojson)
-
-    # Check for missing files
-    if statistic_2_2 is None:
-        print(f"✗️ No district region data in {statistic_name}-4-2-2")
-    if statistic_4_2 is None:
-        print(f"✗️ No district region data in {statistic_name}-4-2")
-
-    # Check if file needs to be created
-    for feature in geojson_extended["features"]:
-        feature_id = feature["properties"]["id"]
-        area_sqm = feature["properties"]["area"]
-        area_sqkm = area_sqm / 1_000_000
-
-        # Filter statistics
-        statistic_2_2_filtered = statistic_2_2.loc[
-            (statistic_2_2["id"] == int(feature_id))] if statistic_2_2 is not None else None
-        statistic_4_2_filtered = statistic_4_2.loc[
-            (statistic_4_2["id"] == int(feature_id))] if statistic_4_2 is not None else None
-
-        # Check for missing data
-        if statistic_2_2_filtered is not None and statistic_2_2_filtered.shape[0] == 0:
-            print(f"✗️ No district region data in {statistic_name}-4-2-2 for id={feature_id}")
-        if statistic_4_2_filtered is not None and statistic_4_2_filtered.shape[0] == 0:
-            print(f"✗️ No district region data in {statistic_name}-4-2 for id={feature_id}")
-
-        # Blend data
-        feature = blend_district_region_data_post_2020(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_2_2_filtered=statistic_2_2_filtered,
-            statistic_4_2_filtered=statistic_4_2_filtered
-        )
-
-        # Build structure
-        if year not in statistics:
-            statistics[year] = {}
-        if half_year not in statistics[year]:
-            statistics[year][half_year] = {}
-
-        # Add properties
-        statistics[year][half_year][feature_id] = feature["properties"]
-
-    # Calculate average and median values
-    for year, half_years in statistics.items():
-        for half_year, feature_ids in half_years.items():
-            values = {}
-
-            for feature_id, properties in feature_ids.items():
-                for property_name, property_value in properties.items():
-                    if property_name in statistic_properties:
-                        if property_name not in values:
-                            values[property_name] = []
-                        values[property_name].append(property_value)
-
-            statistics[year][half_year]["average"] = {key: stats.mean(lst) for key, lst in values.items()}
-            statistics[year][half_year]["median"] = {key: stats.median(lst) for key, lst in values.items()}
-
-    return geojson_extended, statistics
-
-
-def extend_planning_areas_post_2020(statistics, year, half_year,
-                                    statistic_name, statistic_1, statistic_2_1, statistic_3, statistic_4_1,
-                                    geojson):
-    geojson_extended = copy.deepcopy(geojson)
-
-    # Check for missing files
-    if statistic_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-1")
-    if statistic_2_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-2-1")
-    if statistic_3 is None:
-        print(f"✗️ No planning area data in {statistic_name}-3")
-    if statistic_4_1 is None:
-        print(f"✗️ No planning area data in {statistic_name}-4-1")
-
-    for feature in geojson_extended["features"]:
-        feature_id = feature["properties"]["id"]
-        area_sqm = feature["properties"]["area"]
-        area_sqkm = area_sqm / 1_000_000
-
-        # Filter statistics
-        statistic_1_filtered = statistic_1.loc[
-            (statistic_1["id"] == int(feature_id))] if statistic_1 is not None else None
-        statistic_2_1_filtered = statistic_2_1.loc[
-            (statistic_2_1["id"] == int(feature_id))] if statistic_2_1 is not None else None
-        statistic_3_filtered = statistic_3.loc[
-            (statistic_3["id"] == int(feature_id))] if statistic_3 is not None else None
-        statistic_4_1_filtered = statistic_4_1.loc[
-            (statistic_4_1["id"] == int(feature_id))] if statistic_4_1 is not None else None
-
-        # Check for missing data
-        if statistic_1_filtered is not None and statistic_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-1 for id={feature_id}")
-        if statistic_2_1_filtered is not None and statistic_2_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-2-1 for id={feature_id}")
-        if statistic_3_filtered is not None and statistic_3_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-3 for id={feature_id}")
-        if statistic_4_1_filtered is not None and statistic_4_1_filtered.shape[0] == 0:
-            print(f"✗️ No planning area data in {statistic_name}-4-1 for id={feature_id}")
-
-        # Blend data
-        feature = blend_planning_area_data_post_2020(
-            feature=feature, area_sqkm=area_sqkm,
-            statistic_1_filtered=statistic_1_filtered,
-            statistic_2_1_filtered=statistic_2_1_filtered,
-            statistic_3_filtered=statistic_3_filtered,
-            statistic_4_1_filtered=statistic_4_1_filtered
-        )
-
-        # Build structure
-        if year not in statistics:
-            statistics[year] = {}
-        if half_year not in statistics[year]:
-            statistics[year][half_year] = {}
-
-        # Add properties
-        statistics[year][half_year][feature_id] = feature["properties"]
-
-    # Calculate average and median values
-    for year, half_years in statistics.items():
-        for half_year, feature_ids in half_years.items():
-            values = {}
-
-            for feature_id, properties in feature_ids.items():
-                for property_name, property_value in properties.items():
-                    if property_name in statistic_properties:
-                        if property_name not in values:
-                            values[property_name] = []
-                        values[property_name].append(property_value)
-
-            statistics[year][half_year]["average"] = {key: stats.mean(lst) for key, lst in values.items()}
-            statistics[year][half_year]["median"] = {key: stats.median(lst) for key, lst in values.items()}
-
-    return geojson_extended, statistics
-
-
-def blend_district_data(feature, area_sqkm, statistic_2_3_filtered, statistic_4_3_filtered):
+def blend_data_into_feature(feature, area_sqkm, statistic_filtered):
     # Add new properties
-    add_property_with_modifiers(feature, statistic_2_3_filtered, "inhabitants", area_sqkm)
+    add_property_with_modifiers(feature, statistic_filtered, "inhabitants", area_sqkm)
 
     for property_name in statistic_properties:
-        add_property(feature, statistic_2_3_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_3_filtered, property_name)
-
-    return feature
-
-
-def blend_district_region_data(feature, area_sqkm, statistic_2_2_filtered, statistic_4_2_filtered):
-    # Add new properties
-    add_property_with_modifiers(feature, statistic_2_2_filtered, "inhabitants", area_sqkm)
-
-    for property_name in statistic_properties:
-        add_property(feature, statistic_2_2_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_2_filtered, property_name)
-
-    return feature
-
-
-def blend_planning_area_data(feature, area_sqkm, statistic_1_filtered, statistic_2_1_filtered, statistic_3_filtered,
-                             statistic_4_1_filtered):
-    # Add new properties
-    add_property_with_modifiers(feature, statistic_1_filtered, "inhabitants", area_sqkm)
-
-    for property_name in statistic_properties:
-        add_property(feature, statistic_1_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_2_1_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_3_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_1_filtered, property_name)
-
-    return feature
-
-
-def blend_district_data_post_2020(feature, area_sqkm, statistic_2_3_filtered, statistic_4_3_filtered):
-    # Add new properties
-    add_property_with_modifiers(feature, statistic_2_3_filtered, "inhabitants", area_sqkm)
-
-    for property_name in statistic_properties:
-        add_property(feature, statistic_2_3_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_3_filtered, property_name)
-
-    return feature
-
-
-def blend_district_region_data_post_2020(feature, area_sqkm, statistic_2_2_filtered, statistic_4_2_filtered):
-    # Add new properties
-    add_property_with_modifiers(feature, statistic_2_2_filtered, "inhabitants", area_sqkm)
-
-    for property_name in statistic_properties:
-        add_property(feature, statistic_2_2_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_2_filtered, property_name)
-
-    return feature
-
-
-def blend_planning_area_data_post_2020(feature, area_sqkm, statistic_1_filtered, statistic_2_1_filtered,
-                                       statistic_3_filtered, statistic_4_1_filtered):
-    # Add new properties
-    add_property_with_modifiers(feature, statistic_1_filtered, "inhabitants", area_sqkm)
-
-    for property_name in statistic_properties:
-        add_property(feature, statistic_1_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_2_1_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_3_filtered, property_name)
-    for property_name in statistic_properties:
-        add_property(feature, statistic_4_1_filtered, property_name)
+        add_property(feature, statistic_filtered, property_name)
 
     return feature
 
@@ -783,7 +447,7 @@ def blend_planning_area_data_post_2020(feature, area_sqkm, statistic_1_filtered,
 def add_property(feature, statistics, property_name):
     if statistics is not None and property_name in statistics:
         try:
-            feature["properties"][f"{property_name}"] = float(statistics[property_name])
+            feature["properties"][f"{property_name}"] = float(statistics[property_name].item())
         except ValueError:
             feature["properties"][f"{property_name}"] = 0
         except TypeError:
@@ -793,10 +457,10 @@ def add_property(feature, statistics, property_name):
 def add_property_with_modifiers(feature, statistics, property_name, total_area_sqkm):
     if statistics is not None and property_name in statistics:
         try:
-            feature["properties"][f"{property_name}"] = float(statistics[property_name].sum())
+            feature["properties"][f"{property_name}"] = float(statistics[property_name].item())
             if total_area_sqkm is not None:
                 feature["properties"][f"{property_name}_per_sqkm"] = round(
-                    float(statistics[property_name].sum()) / total_area_sqkm)
+                    float(statistics[property_name].item()) / total_area_sqkm)
         except ValueError:
             feature["properties"][f"{property_name}"] = 0
 
