@@ -377,7 +377,7 @@ def convert_file_to_csv_districts(source_file_paths, clean=False, quiet=False):
 
             # Write csv file
             if dataframe.shape[0] > 0:
-                dataframe.to_csv(os.path.basename(file_path_csv), index=False)
+                dataframe.to_csv(file_path_csv, index=False)
                 if not quiet:
                     print(f"✓ Convert {os.path.basename(file_path_csv)}")
             else:
