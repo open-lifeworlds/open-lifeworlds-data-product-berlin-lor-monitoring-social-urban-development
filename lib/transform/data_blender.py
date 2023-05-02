@@ -120,7 +120,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
         file_path=os.path.join(results_path, f"{key_figure_group}-statistics",
                                f"{key_figure_group}-statistics.json"),
         statistic_name=f"{key_figure_group}-statistics",
-        json_content=json_statistics,
+        json_content=json_statistics_all,
         clean=clean,
         quiet=quiet
     )
