@@ -131,8 +131,6 @@ def extend(year, half_year, geojson, statistics_name, csv_statistics, json_stati
     # Check if file needs to be created
     for feature in sorted(geojson["features"], key=lambda feature: feature["properties"]["id"]):
         feature_id = feature["properties"]["id"]
-        area_sqm = feature["properties"]["area"]
-        area_sqkm = area_sqm / 1_000_000
 
         # Filter statistics
         statistic_filtered = csv_statistics[csv_statistics["id"].astype(str).str.startswith(feature_id)]
@@ -144,14 +142,11 @@ def extend(year, half_year, geojson, statistics_name, csv_statistics, json_stati
             continue
 
         # Blend data
-        blend_data_into_feature(feature=feature, statistics=statistic_filtered, area_sqkm=area_sqkm)
+        blend_data_into_feature(feature=feature, statistics=statistic_filtered)
         blend_data_into_json(year, half_year, feature_id, feature, json_statistics)
 
 
-def blend_data_into_feature(feature, statistics, area_sqkm):
-    # Add new properties
-    add_property_with_modifiers(feature, statistics, "inhabitants", area_sqkm)
-
+def blend_data_into_feature(feature, statistics):
     for property_name in statistic_properties:
         add_property(feature, statistics, property_name)
 
@@ -177,25 +172,6 @@ def add_property(feature, statistics, property_name):
             feature["properties"][f"{property_name}"] = 0
         except TypeError:
             feature["properties"][f"{property_name}"] = 0
-
-
-def add_property_with_modifiers(feature, statistics, property_name, total_area_sqkm):
-    if statistics is not None and property_name in statistics:
-        try:
-            feature["properties"][f"{property_name}"] = float(statistics[property_name].sum())
-            if total_area_sqkm is not None:
-                feature["properties"][f"{property_name}_per_sqkm"] = round(
-                    float(statistics[property_name].sum()) / total_area_sqkm)
-        except ValueError:
-            feature["properties"][f"{property_name}"] = 0
-
-            if total_area_sqkm is not None:
-                feature["properties"][f"{property_name}_per_sqkm"] = 0
-        except TypeError:
-            feature["properties"][f"{property_name}"] = 0
-
-            if total_area_sqkm is not None:
-                feature["properties"][f"{property_name}_per_sqkm"] = 0
 
 
 def read_csv_file(file_path):
