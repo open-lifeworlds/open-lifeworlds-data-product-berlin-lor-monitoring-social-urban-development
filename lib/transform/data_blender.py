@@ -223,6 +223,8 @@ def write_geojson_file(file_path, statistic_name, geojson_content, clean, quiet)
 
             if not quiet:
                 print(f"✓ Blend data from {statistic_name} into {os.path.basename(file_path)}")
+    else:
+        print(f"✓ Already exists {os.path.basename(file_path)}")
 
 
 def write_json_file(file_path, statistic_name, json_content, clean, quiet):
@@ -237,3 +239,5 @@ def write_json_file(file_path, statistic_name, json_content, clean, quiet):
 
             if not quiet:
                 print(f"✓ Aggregate data from {statistic_name} into {os.path.basename(file_path)}")
+    else:
+        print(f"✓ Already exists {os.path.basename(file_path)}")
