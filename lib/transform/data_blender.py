@@ -137,16 +137,17 @@ def extend(year, half_year, geojson, statistics_name, csv_statistics, json_stati
 
         # Check for missing data
         if statistic_filtered.shape[0] == 0 or \
-                int(statistic_filtered["inhabitants"].sum()) == 0:
+                int(statistic_filtered["id"].sum()) == 0:
             print(f"✗️ No data in {statistics_name} for id={feature_id}")
             continue
 
         # Blend data
-        blend_data_into_feature(feature=feature, statistics=statistic_filtered)
+        blend_data_into_feature(feature, statistic_filtered)
         blend_data_into_json(year, half_year, feature_id, feature, json_statistics)
 
 
 def blend_data_into_feature(feature, statistics):
+    # Add new properties
     for property_name in statistic_properties:
         add_property(feature, statistics, property_name)
 
@@ -172,6 +173,19 @@ def add_property(feature, statistics, property_name):
             feature["properties"][f"{property_name}"] = 0
         except TypeError:
             feature["properties"][f"{property_name}"] = 0
+
+
+def load_population_statistics(file_path):
+    with open(file=file_path, mode="r", encoding="utf-8") as json_file:
+        return json.load(json_file, strict=False)
+
+
+def get_inhabitants(population_statistics, year, feature_id):
+    try:
+        return population_statistics[year]["02"][feature_id]["inhabitants"]
+    except KeyError:
+        # print(f"✗️ No population data for id={feature_id}")
+        return None
 
 
 def read_csv_file(file_path):

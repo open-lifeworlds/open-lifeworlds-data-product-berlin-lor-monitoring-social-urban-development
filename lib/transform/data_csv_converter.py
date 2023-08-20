@@ -85,10 +85,10 @@ def convert_file_to_csv_planning_areas(source_file_paths, clean=False, quiet=Fal
                         "d4_percentage_transfer_payments_recipients_below_15_years"
                     ]
                     if year == "2019" or year == "2021":
-                        drop_columns = ["name", "average_and_standard_deviation", "s2_percentage_long_term_unemployed",
-                                        "d2_percentage_long_term_unemployed"]
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation",
+                                        "s2_percentage_long_term_unemployed", "d2_percentage_long_term_unemployed"]
                     else:
-                        drop_columns = ["name", "average_and_standard_deviation"]
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation"]
                 elif re.search(r"\d{4}-\d{2}-3", source_file_name) is not None:
 
                     if year == "2017":
@@ -104,10 +104,10 @@ def convert_file_to_csv_planning_areas(source_file_paths, clean=False, quiet=Fal
                         "z_d4_percentage_transfer_payments_recipients_below_15_years"
                     ]
                     if year == "2019" or year == "2021":
-                        drop_columns = ["name", "average_and_standard_deviation",
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation",
                                         "z_s2_percentage_long_term_unemployed", "z_d2_percentage_long_term_unemployed"]
                     else:
-                        drop_columns = ["name", "average_and_standard_deviation"]
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation"]
                 elif re.search(r"\d{4}-\d{2}-4-1", source_file_name) is not None:
 
                     if year == "2013":
@@ -163,15 +163,15 @@ def convert_file_to_csv_planning_areas(source_file_paths, clean=False, quiet=Fal
             if dataframe.shape[0] > 0:
                 dataframe.to_csv(file_path_csv, index=False)
                 if not quiet:
-                    print(f"✓ Convert {file_path_csv}")
+                    print(f"✓ Convert {os.path.basename(file_path_csv)}")
             else:
                 if not quiet:
                     print(dataframe.head())
-                    print(f"✗️ Empty {file_path_csv}")
+                    print(f"✗️ Empty {os.path.basename(file_path_csv)}")
         except Exception as e:
             print(f"✗️ Exception: {str(e)}")
     elif not quiet:
-        print(f"✓ Already exists {file_path_csv}")
+        print(f"✓ Already exists {os.path.basename(file_path_csv)}")
 
 
 def convert_file_to_csv_district_regions(source_file_paths, clean=False, quiet=False):
@@ -215,10 +215,10 @@ def convert_file_to_csv_district_regions(source_file_paths, clean=False, quiet=F
                         "d4_percentage_transfer_payments_recipients_below_15_years"
                     ]
                     if year == "2017" or year == "2019" or year == "2021":
-                        drop_columns = ["name", "average_and_standard_deviation", "s2_percentage_long_term_unemployed",
-                                        "d2_percentage_long_term_unemployed"]
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation",
+                                        "s2_percentage_long_term_unemployed", "d2_percentage_long_term_unemployed"]
                     else:
-                        drop_columns = ["name", "average_and_standard_deviation"]
+                        drop_columns = ["name", "inhabitants", "average_and_standard_deviation"]
                 elif re.search(r"\d{4}-\d{2}-4-2", source_file_name) is not None:
                     if year == "2013":
                         sheets = [f"Kontextind_MSS{year}_BZR"]
@@ -249,10 +249,10 @@ def convert_file_to_csv_district_regions(source_file_paths, clean=False, quiet=F
                         ]
 
                     if year == "2021":
-                        drop_columns = ["name", "average_and_standard_deviation", "k08_urban_apartments",
+                        drop_columns = ["inhabitants", "name", "average_and_standard_deviation", "k08_urban_apartments",
                                         "k14_living_rooms", "k15_living_space"]
                     else:
-                        drop_columns = ["name", "average_and_standard_deviation"]
+                        drop_columns = ["inhabitants", "name", "average_and_standard_deviation"]
                 else:
                     sheets = []
                     skiprows = 0
@@ -273,15 +273,15 @@ def convert_file_to_csv_district_regions(source_file_paths, clean=False, quiet=F
             if dataframe.shape[0] > 0:
                 dataframe.to_csv(file_path_csv, index=False)
                 if not quiet:
-                    print(f"✓ Convert {file_path_csv}")
+                    print(f"✓ Convert {os.path.basename(file_path_csv)}")
             else:
                 if not quiet:
                     print(dataframe.head())
-                    print(f"✗️ Empty {file_path_csv}")
+                    print(f"✗️ Empty {os.path.basename(file_path_csv)}")
         except Exception as e:
             print(f"✗️ Exception: {str(e)}")
     elif not quiet:
-        print(f"✓ Already exists {file_path_csv}")
+        print(f"✓ Already exists {os.path.basename(file_path_csv)}")
 
 
 def convert_file_to_csv_districts(source_file_paths, clean=False, quiet=False):
@@ -321,10 +321,10 @@ def convert_file_to_csv_districts(source_file_paths, clean=False, quiet=False):
                         "d4_percentage_transfer_payments_recipients_below_15_years"
                     ]
                     if year == "2019" or year == "2021":
-                        drop_columns = ["average_and_standard_deviation", "s2_percentage_long_term_unemployed",
+                        drop_columns = ["inhabitants", "average_and_standard_deviation", "s2_percentage_long_term_unemployed",
                                         "d2_percentage_long_term_unemployed"]
                     else:
-                        drop_columns = ["average_and_standard_deviation"]
+                        drop_columns = ["inhabitants", "average_and_standard_deviation"]
                 elif re.search(r"\d{4}-\d{2}-4-3", source_file_name) is not None:
                     if year == "2013":
                         sheets = [f"Kontextind_MSS{year}_Bezirke"]
@@ -355,10 +355,10 @@ def convert_file_to_csv_districts(source_file_paths, clean=False, quiet=False):
                         ]
 
                     if year == "2021":
-                        drop_columns = ["average_and_standard_deviation", "k08_urban_apartments", "k14_living_rooms",
-                                        "k15_living_space"]
+                        drop_columns = ["inhabitants", "average_and_standard_deviation", "k08_urban_apartments",
+                                        "k14_living_rooms", "k15_living_space"]
                     else:
-                        drop_columns = ["average_and_standard_deviation"]
+                        drop_columns = ["inhabitants", "average_and_standard_deviation"]
                 else:
                     sheets = []
                     skiprows = 0
