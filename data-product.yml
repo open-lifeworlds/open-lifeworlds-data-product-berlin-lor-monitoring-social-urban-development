@@ -2,9 +2,9 @@
 id: berlin-lor-monitoring-social-urban-development
 name: Berlin LOR Monitoring Social Urban Development
 metadata:
-  - ownership: Open Lifeworlds
-  - domain: geodata
-  - schema:
+  ownership: Open Lifeworlds
+  domain: geodata
+  schema:
     - inhabitants: number of inhabitants
     - s1_percentage_unemployed: (status index) percentage of unemployed inhabitants
     - s2_percentage_long_term_unemployed: (status index) percentage of long-term unemployed inhabitants
