@@ -9,7 +9,7 @@
   <h1 align="center">Open Lifeworlds Data Product - Berlin LOR monitoring social urban development</h1>
 
   <p align="center">
-    Data product providing Berlin LOR monitoring social urban development data</a>
+    Consumer-aligned data product combining Berlin LOR monitoring social urban development data and geodata</a>
   </p>
 </p>
 

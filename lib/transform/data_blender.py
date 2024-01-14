@@ -3,7 +3,6 @@ import os
 import re
 
 import pandas as pd
-from tqdm import tqdm
 
 from lib.tracking_decorator import TrackingDecorator
 
@@ -59,7 +58,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
     for lor_area_type in ["districts", "district-regions", "planning-areas"]:
 
         # Iterate over statistics
-        for statistics_name in tqdm(sorted(statistics), desc=f"Blend statistics for {lor_area_type}", unit="statistic"):
+        for statistics_name in sorted(statistics):
             year = re.search(r"\b\d{4}\b", statistics_name).group()
             half_year = re.search(r"\b\d{2}(?<!\d{4})\b", statistics_name).group()
 
@@ -78,7 +77,7 @@ def blend_data(source_path, results_path, clean=False, quiet=False):
 
             # Load statistics
             csv_statistics = read_csv_file(
-                os.path.join(source_path, statistics_name, f"{statistics_name}-{lor_area_type}.csv"))
+                os.path.join(source_path, "berlin-lor-monitoring-social-urban-development-csv", f"{statistics_name}-{lor_area_type}.csv"))
 
             # Extend geojson
             extend(

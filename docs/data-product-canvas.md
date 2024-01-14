@@ -1,10 +1,13 @@
-# Data Product Canvas - Berlin LOR monitoring social urban development
+# Data Product Canvas - Berlin LOR Monitoring Social Urban Development
 
 ## Input Ports
 
 **Input ports define the format and protocol in which data can be read (database, file, API, visualizations)**
 
-This data product uses LOR geodata provided by [Open Lifeworlds](https://github.com/open-lifeworlds) available under the following URLs
+This data product uses LOR geodata provided by data
+product [open-lifeworlds-data-product-berlin-lor-geodata](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata)
+published under the following URLs
+
 * [berlin-lor-districts/berlin-lor-districts.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-districts/berlin-lor-districts.geojson)
 * [berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson)
 * [berlin-lor-forecast-areas-from-2021/berlin-lor-forecast-areas-from-2021.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-forecast-areas-from-2021/berlin-lor-forecast-areas-from-2021.geojson)
@@ -13,50 +16,25 @@ This data product uses LOR geodata provided by [Open Lifeworlds](https://github.
 * [berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson)
 * [berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-geodata/main/data/berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson)
 
-and statistical urban development data provided by [Amt für Statistik Berlin-Brandenburg](https://www.statistik-berlin-brandenburg.de/) available under the following URLs
-* [1-sdi_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/1-sdi_mss2013.xlsx)
-* [2-1-indexind_anteile_plr_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-1-indexind_anteile_plr_mss2013.xlsx)
-* [2-2-indexind_anteile_bzr_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-2-indexind_anteile_bzr_mss2013.xlsx)
-* [2-3-indexind_anteile_bezirke_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/2-3-indexind_anteile_bezirke_mss2013.xlsx)
-* [3-indexind_z_wertemss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/3-indexind_z_wertemss2013.xlsx)
-* [4-1-kontextind_anteile_plr_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-1-kontextind_anteile_plr_mss2013.xlsx)
-* [4-2-kontextind_anteile_bzr_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-2-kontextind_anteile_bzr_mss2013.xlsx)
-* [4-3-kontextind_anteile_bezirke_mss2013.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2013/4-3-kontextind_anteile_bezirke_mss2013.xlsx)
-* [1-sdi_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/1-sdi_mss2015.xlsx)
-* [2-1-indexind_anteile_plr_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-1-indexind_anteile_plr_mss2015.xlsx)
-* [2-2-indexind_anteile_bzr_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-2-indexind_anteile_bzr_mss2015.xlsx)
-* [2-3-indexind_anteile_bezirke_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/2-3-indexind_anteile_bezirke_mss2015.xlsx)
-* [3-indexind_z_wertemss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/3-indexind_z_wertemss2015.xlsx)
-* [4-1-kontextind_anteile_plr_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-1-kontextind_anteile_plr_mss2015.xlsx)
-* [4-2-kontextind_anteile_bzr_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-2-kontextind_anteile_bzr_mss2015.xlsx)
-* [4-3-kontextind_anteile_bezirke_mss2015.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2015/4-3-kontextind_anteile_bezirke_mss2015.xlsx)
-* [1-sdi_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/1-sdi_mss2017.xlsx)
-* [2-1-indexind_anteile_plr_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/2-1-indexind_anteile_plr_mss2017.xlsx)
-* [2-2-indexind_anteile_bzr_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-2-indexind_anteile_bzr_mss2019.xlsx)
-* [2.3.indexind_anteile_bezirke_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/2.3.indexind_anteile_bezirke_mss2017.xlsx)
-* [3-indexind_z_wertemss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/3-indexind_z_wertemss2017.xlsx)
-* [4-1-kontextind_anteile_plr_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-1-kontextind_anteile_plr_mss2017.xlsx)
-* [4-2-kontextind_anteile_bzr_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-2-kontextind_anteile_bzr_mss2017.xlsx)
-* [4-3-kontextind_anteile_bezirke_mss2017.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2017/4-3-kontextind_anteile_bezirke_mss2017.xlsx)
-* [1-sdi_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/1-sdi_mss2019.xlsx)
-* [2-1-indexind_anteile_plr_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-1-indexind_anteile_plr_mss2019.xlsx)
-* [2-2-indexind_anteile_bzr_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-2-indexind_anteile_bzr_mss2019.xlsx)
-* [2-3-indexind_anteile_bezirke_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/2-3-indexind_anteile_bezirke_mss2019.xlsx)
-* [3-indexind_z_wertemss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/3-indexind_z_wertemss2019.xlsx)
-* [4.1.kontextind_anteile_plr_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.1.kontextind_anteile_plr_mss2019.xlsx)
-* [4.2.kontextind_anteile_bzr_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.2.kontextind_anteile_bzr_mss2019.xlsx)
-* [4.3.kontextind_anteile_bezirke_mss2019.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2019/4.3.kontextind_anteile_bezirke_mss2019.xlsx)
-* [tabelle_1_gesamtindex_soziale_ungleichheit_sdi_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_1_gesamtindex_soziale_ungleichheit_sdi_mss_2021.xlsx)
-* [tabelle_2-1_index-indikatoren_anteilswerte_auf_planungsraum-ebene_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-1_index-indikatoren_anteilswerte_auf_planungsraum-ebene_mss_2021.xlsx)
-* [tabelle_2-2_index-indikatoren_anteilswerte_auf_bezirksregionen-ebene_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-2_index-indikatoren_anteilswerte_auf_bezirksregionen-ebene_mss_2021.xlsx)
-* [tabelle_2-3_index-indikatoren_auf_ebene_der_bezirke_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_2-3_index-indikatoren_auf_ebene_der_bezirke_mss_2021.xlsx)
-* [tabelle_3_index-indikatoren_z-werte_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_3_index-indikatoren_z-werte_mss_2021.xlsx)
-* [tabelle_4-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx)
-* [tabelle_4-2_kontext-indikatoren_anteile_bzr_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-2_kontext-indikatoren_anteile_bzr_mss_2021.xlsx)
-* [tabelle_4-3_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-3_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx)
-* [tabelle_4-1-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-1-1_kontext-indikatoren_anteile_plr_mss_2021.xlsx)
-* [tabelle_4-2-1_kontext-indikatoren_anteile_bzr_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-2-1_kontext-indikatoren_anteile_bzr_mss_2021.xlsx)
-* [tabelle_4-3-1_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx](https://www.berlin.de/sen/sbw/_assets/stadtdaten/stadtwissen/monitoring-soziale-stadtentwicklung/bericht-2021/tabelle_4-3-1_kontext-indikatoren_anteile_bezirke_mss_2021.xlsx)
+and statistical monitoring social urban development data provided by data
+product [open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development-source-aligned](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development-source-aligned)
+published under the following URLs
+
+* [berlin-lor-monitoring-social-urban-development-2013-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.csv)
+* [berlin-lor-monitoring-social-urban-development-2013-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.csv)
+* [berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.csv)
+* [berlin-lor-monitoring-social-urban-development-2015-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-district-regions.csv)
+* [berlin-lor-monitoring-social-urban-development-2015-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-districts.csv)
+* [berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.csv)
+* [berlin-lor-monitoring-social-urban-development-2017-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-district-regions.csv)
+* [berlin-lor-monitoring-social-urban-development-2017-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-districts.csv)
+* [berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.csv)
+* [berlin-lor-monitoring-social-urban-development-2019-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-district-regions.csv)
+* [berlin-lor-monitoring-social-urban-development-2019-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-districts.csv)
+* [berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.csv)
+* [berlin-lor-monitoring-social-urban-development-2021-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.csv)
+* [berlin-lor-monitoring-social-urban-development-2021-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-districts.csv)
+* [berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.csv)
 
 ## Data Product Design
 
@@ -65,7 +43,7 @@ and statistical urban development data provided by [Amt für Statistik Berlin-Br
 statements, or used data platform services.**
 
 This data product
-* [converts Excel data into csv](../lib/transform/data_csv_converter.py)
+
 * [blends statistical data into geojson](../lib/transform/data_blender.py) on different LOR area hierarchy levels
 * [aggregates statistical data into json](../lib/transform/data_blender.py) on different LOR area hierarchy levels
 
@@ -74,23 +52,6 @@ This data product
 **Output ports define the format and protocol in which data can be exposed (db, file, API, visualizations)**
 
 The data of this data product is available under the following URLs
-* [berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.csv)
-* [berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.csv)
-* [berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.csv)
-* [berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-district-regions.csv)
-* [berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-districts.csv)
-* [berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.csv)
-* [berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-district-regions.csv)
-* [berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-districts.csv)
-* [berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.csv)
-* [berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-district-regions.csv)
-* [berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-districts.csv)
-* [berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.csv)
-* [berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.csv)
-* [berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-districts.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-districts.csv)
-* [berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.csv](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.csv)
-
-Additionally, data blended into geojson is available under the following URLs
 
 * [berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson)
 * [berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson)
@@ -130,11 +91,13 @@ Additionally, statistics are available under the following URLs
 * `s1_percentage_unemployed`: (status index) percentage of unemployed inhabitants
 * `s2_percentage_long_term_unemployed`: (status index) percentage of long-term unemployed inhabitants
 * `s3_percentage_transfer_payments_recipients`: (status index) percentage of inhabitants receiving transfer payments
-* `s4_percentage_transfer_payments_recipients_below_15_years`: (status index) percentage of inhabitants receiving transfer payments below 15 years old
+* `s4_percentage_transfer_payments_recipients_below_15_years`: (status index) percentage of inhabitants receiving
+  transfer payments below 15 years old
 * `d1_percentage_unemployed`: (dynamic index) percentage of unemployed inhabitants
 * `d2_percentage_long_term_unemployed`: (dynamic index) percentage of long-term unemployed inhabitants
 * `d3_percentage_transfer_payments_recipients`: (dynamic index) percentage of inhabitants receiving transfer payments
-* `d4_percentage_transfer_payments_recipients_below_15_years`: (dynamic index) percentage of inhabitants receiving transfer payments below 15 years old
+* `d4_percentage_transfer_payments_recipients_below_15_years`: (dynamic index) percentage of inhabitants receiving
+  transfer payments below 15 years old
 * `k01_youth_unemployment`: percentage of youth unemployment
 * `k02_single_parent_households`: percentage of single parent households
 * `k03_old_age_poverty`: percentage of old age poverty
@@ -182,8 +145,7 @@ Completeness of this data product is verified via [data_metrics.py](../lib/metri
 
 **Who is the consumer of the Data Product?**
 
-Consumers of this data product may include
-* projects that display statistical data based on LOR areas on maps or graphs
+Consumers of this data product may include projects that display statistical data based on LOR areas on maps or graphs.
 
 ## Use Case
 
@@ -191,7 +153,8 @@ Consumers of this data product may include
 **We help achieving ...**
 **We know, we are getting there based on ..., ..., ...**
 
-We believe that this data product can be used to display statistical data related to LOR areas in Berlin on an interactive map.
+We believe that this data product can be used to display statistical data related to LOR areas in Berlin on an
+interactive map.
 
 ## Classification
 
@@ -209,7 +172,6 @@ current Data Product**
 * **forecast area**: (German: Prognoseraum)
 * **district region**: (German: Bezirksregion)
 * **planning area**: a spatial unit whose spatial development is planned by the public authorities
-
 
 ---
 This data product canvas uses the template
