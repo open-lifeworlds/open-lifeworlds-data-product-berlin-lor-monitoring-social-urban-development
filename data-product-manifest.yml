@@ -1,0 +1,345 @@
+---
+id: berlin-lor-monitoring-social-urban-development
+metadata:
+  name: Berlin LOR Monitoring Social Urban Development
+  owner: Open Lifeworlds
+  description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
+  url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
+  license: CC-BY 4.0
+  updated: 2025-07-06
+  schema:
+    - name: inhabitants
+      description: number of inhabitants
+    - name: s1_percentage_unemployed
+      description: (status index) percentage of unemployed inhabitants
+    - name: s2_percentage_long_term_unemployed
+      description: (status index) percentage of long-term unemployed inhabitants
+    - name: s3_percentage_transfer_payments_recipients
+      description: (status index) percentage of inhabitants receiving transfer payments
+    - name: s4_percentage_transfer_payments_recipients_below_15_years
+      description: (status index) percentage of inhabitants receiving transfer payments below 15 years old
+    - name: d1_percentage_unemployed
+      description: (dynamic index) percentage of unemployed inhabitants
+    - name: d2_percentage_long_term_unemployed
+      description: (dynamic index) percentage of long-term unemployed inhabitants
+    - name: d3_percentage_transfer_payments_recipients
+      description: (dynamic index) percentage of inhabitants receiving transfer payments
+    - name: d4_percentage_transfer_payments_recipients_below_15_years
+      description: (dynamic index) percentage of inhabitants receiving transfer payments below 15 years old
+    - name: k01_youth_unemployment
+      description: percentage of youth unemployment
+    - name: k02_single_parent_households
+      description: percentage of single parent households
+    - name: k03_old_age_poverty
+      description: percentage of old age poverty
+    - name: k04_children_with_migration_background
+      description: percentage of children with migration background
+    - name: k05_inhabitants_with_migration_background
+      description: percentage of inhabitants with migration background
+    - name: k16_foreigners
+      description: percentage of foreigners
+    - name: k06_change_proportion_of_foreigner
+      description: change of proportion of foreigner
+    - name: k17_non_eu_foreigners
+      description: percentage of non-EU foreigners
+    - name: k07_foreign_transfer_recipients
+      description: percentage of foreign transfer recipients
+    - name: k08_urban_apartments
+      description: percentage of urban apartments
+    - name: k14_living_rooms
+      description: average number of living rooms
+    - name: k15_living_space
+      description: average living space
+    - name: k09_simple_residential_area
+      description: percentage of simple residential area
+    - name: k10_duration_of_residence_over_5_years
+      description: percentage of duration of residence over 5 years old
+    - name: k11_migration_volume
+      description: migration volume
+    - name: k12_balance_of_migration
+      description: balance of migration
+    - name: k13_balance_of_migration_of_children_below_6
+      description: balance of migration of children below 6 years old
+input_ports:
+  - id: berlin-lor-city
+    metadata:
+      name: Berlin Lor City
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-city
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-city/berlin-lor-city.geojson
+  - id: berlin-lor-district-regions-from-2021
+    metadata:
+      name: Berlin Lor District Regions From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-district-regions-from-2021
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-district-regions-from-2021/berlin-lor-district-regions-from-2021.geojson
+  - id: berlin-lor-district-regions-until-2020
+    metadata:
+      name: Berlin Lor District Regions Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-district-regions-until-2020
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+  - id: berlin-lor-districts
+    metadata:
+      name: Berlin Lor Districts
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-districts
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-districts/berlin-lor-districts.geojson
+  - id: berlin-lor-forecast-areas-from-2021
+    metadata:
+      name: Berlin Lor Forecast Areas From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-forecast-areas-from-2021
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-forecast-areas-from-2021/berlin-lor-forecast-areas-from-2021.geojson
+  - id: berlin-lor-forecast-areas-until-2020
+    metadata:
+      name: Berlin Lor Forecast Areas Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-forecast-areas-until-2020
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+  - id: berlin-lor-planning-areas-from-2021
+    metadata:
+      name: Berlin Lor Planning Areas From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-planning-areas-from-2021
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson
+  - id: berlin-lor-planning-areas-until-2020
+    metadata:
+      name: Berlin Lor Planning Areas Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-planning-areas-until-2020
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+  - id: berlin-lor-matches
+    metadata:
+      name: Berlin Lor Matches
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/03-gold/berlin-lor-matches
+      license: CC-BY 4.0
+      updated: 2025-06-21
+      schema: []
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/03-gold/berlin-lor-matches/berlin-lor-matches.json
+  - id: berlin-lor-monitoring-social-urban-development-2013-00
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development 2013 00
+      owner: Open Data product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00
+      license: CC-BY 4.0
+      updated: 2025-06-24
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2013-00/berlin-lor-monitoring-social-urban-development-2013-00-4-3-districts.csv
+  - id: berlin-lor-monitoring-social-urban-development-2015-00
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development 2015 00
+      owner: Open Data product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00
+      license: CC-BY 4.0
+      updated: 2025-06-24
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2015-00/berlin-lor-monitoring-social-urban-development-2015-00-4-3-districts.csv
+  - id: berlin-lor-monitoring-social-urban-development-2017-00
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development 2017 00
+      owner: Open Data product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00
+      license: CC-BY 4.0
+      updated: 2025-06-24
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2017-00/berlin-lor-monitoring-social-urban-development-2017-00-4-3-districts.csv
+  - id: berlin-lor-monitoring-social-urban-development-2019-00
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development 2019 00
+      owner: Open Data product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00
+      license: CC-BY 4.0
+      updated: 2025-06-24
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2019-00/berlin-lor-monitoring-social-urban-development-2019-00-4-3-districts.csv
+  - id: berlin-lor-monitoring-social-urban-development-2021-00
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development 2021 00
+      owner: Open Data product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00
+      license: CC-BY 4.0
+      updated: 2025-06-24
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-2-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-2-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-3-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-1-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-2-1-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv
+transformation_steps:
+  - name: Data extractor
+    path: https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/extract/data_extractor.py
+    description: extracts data from inout ports
+  - name: Data blender
+    path: https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/transform/data_blender.py
+    description: blends csv data into geojson files
+output_ports:
+  - id: berlin-lor-monitoring-social-urban-development-geojson
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development Geojson
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
+      license: CC-BY 4.0
+      updated: 2025-07-06
+      schema: []
+    files:
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson
+  - id: berlin-lor-monitoring-social-urban-development-statistics
+    metadata:
+      name: Berlin Lor Monitoring Social Urban Development Statistics
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
+      license: CC-BY 4.0
+      updated: 2025-07-06
+      schema: []
+    files:
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics/berlin-lor-monitoring-social-urban-development-statistics.json
+observability:
+  quality:
+    - name: geojson_property_completeness
+      description: The percentage of geojson features that have all necessary properties
+      files:
+        - name: berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson
+          value: 67
+        - name: berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson
+          value: 100
+        - name: berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson
+          value: 67
+        - name: berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson
+          value: 67
+        - name: berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson
+          value: 100
+        - name: berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson
+          value: 67
+        - name: berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson
+          value: 33
+        - name: berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson
+          value: 0
+        - name: berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson
+          value: 67
+        - name: berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson
+          value: 0
+        - name: berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson
+          value: 0
+        - name: berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson
+          value: 32
+        - name: berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson
+          value: 0
+        - name: berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson
+          value: 0
+        - name: berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson
+          value: 33
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
+classification: consumer-aligned
+ubiquitous_language: []
+tags:
+  - berlin
+  - social development
+  - urban development
