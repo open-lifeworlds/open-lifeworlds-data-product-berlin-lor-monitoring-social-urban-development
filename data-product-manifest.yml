@@ -6,7 +6,7 @@ metadata:
   description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
   url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
   license: CC-BY 4.0
-  updated: 2025-07-06
+  updated: 2025-07-21
   schema:
     - name: inhabitants
       description: number of inhabitants
@@ -268,7 +268,7 @@ output_ports:
       description:
       url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema: []
     files:
       - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson
@@ -293,7 +293,7 @@ output_ports:
       description:
       url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
       license: CC-BY 4.0
-      updated: 2025-07-06
+      updated: 2025-07-21
       schema: []
     files:
       - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics/berlin-lor-monitoring-social-urban-development-statistics.json

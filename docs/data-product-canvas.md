@@ -7,7 +7,7 @@
 * description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
 * license: CC-BY 4.0
-* updated: 2025-07-06
+* updated: 2025-07-21
 
 ## Input Ports
 
@@ -203,6 +203,11 @@
 * [berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv)
 * [berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/main/data/03-gold/berlin-lor-monitoring-social-urban-development-2021-00/berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv)
 
+## Transformation Steps
+
+* [Data extractor](https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/extract/data_extractor.py) extracts data from inout ports
+* [Data blender](https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/transform/data_blender.py) blends csv data into geojson files
+
 ## Output Ports
 
 ### Berlin Lor Monitoring Social Urban Development Geojson
@@ -210,7 +215,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
 * license: CC-BY 4.0
-* updated: 2025-07-06
+* updated: 2025-07-21
 
 **Files**
 
@@ -235,7 +240,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
 * license: CC-BY 4.0
-* updated: 2025-07-06
+* updated: 2025-07-21
 
 **Files**
 
