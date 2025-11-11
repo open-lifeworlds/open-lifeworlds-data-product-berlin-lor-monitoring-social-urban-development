@@ -7,7 +7,7 @@
 * description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 ## Input Ports
 
@@ -215,7 +215,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
@@ -240,7 +240,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-28
 
 **Files**
 
