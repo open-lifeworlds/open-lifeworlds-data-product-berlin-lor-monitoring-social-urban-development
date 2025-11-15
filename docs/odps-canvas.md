@@ -8,13 +8,13 @@
 
 * output file formats: geojson
 * categories: timeseries
-* description: Data product combining Berlin LOR monitoring social urban development data and geodata
-* logo URL: https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-berlin-lor-monitoring-social-urban-development/refs/heads/main/logo-with-text.png
+* description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
+* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
 * product ID: berlin-lor-monitoring-social-urban-development
 * product series: Berlin Timeseries Series
 * status: active
-* tags: Berlin, social development, urban development
-* type: consumer-aligned
+* tags: berlin, social development, urban development
+* type: source-aligned
 * value proposition: Combining Berlin LOR monitoring social urban development data and geodata
 * version: 1.0
 * visibility: public

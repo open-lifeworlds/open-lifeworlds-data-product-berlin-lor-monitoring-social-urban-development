@@ -1,25 +1,52 @@
 ---
 schema: https://opendataproducts.org/v3.1/schema/odps.yaml
-version: 3.1
+version: '3.1'
 product:
-  dataHolder:
-    URL: "https://openlifeworlds.de"
   en:
-    name: "Berlin LOR Monitoring Social Urban Development"
-    productID: "berlin-lor-monitoring-social-urban-development"
-    valueProposition: "Combining Berlin LOR monitoring social urban development data and geodata"
-    description: "Data product combining Berlin LOR monitoring social urban development data and geodata"
-    productSeries: "Berlin Timeseries Series"
-    visibility: "public"
-    status: "active"
-    version: "1.0"
-    categories:
-      - timeseries
-    tags:
-      - Berlin
-      - social development
-      - urban development
-    type: "consumer-aligned"
-    logoURL: "https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-berlin-lor-monitoring-social-urban-development/refs/heads/main/logo-with-text.png"
+    name: Berlin LOR Monitoring Social Urban Development
+    productID: berlin-lor-monitoring-social-urban-development
+    status: active
+    type: source-aligned
+    visibility: public
     OutputFileFormats:
       - geojson
+    brandSlogan:
+    categories:
+      - timeseries
+    description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
+    logoURL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
+    productSeries: Berlin Timeseries Series
+    standards: []
+    tags:
+      - berlin
+      - social development
+      - urban development
+    useCases: []
+    valueProposition: Combining Berlin LOR monitoring social urban development data and geodata
+    version: '1.0'
+  sla: []
+  dataAccess:
+  dataHolder:
+    URL: https://openlifeworlds.de
+    addressCountry:
+    addressLocality:
+    addressRegion:
+    streetAddress:
+    postalCode:
+    telephone:
+    aggregateRating:
+    businessDomain:
+    description:
+    logoURL:
+    parentOrganization:
+    ratingCount:
+    slogan:
+    taxID:
+    vatID:
+  dataOps:
+  dataQuality: []
+  license:
+  pricingPlans:
+  support:
+  recommendedDataProducts: []
+details:
