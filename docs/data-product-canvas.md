@@ -7,7 +7,7 @@
 * description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
 * license: CC-BY 4.0
-* updated: 2025-10-29
+* updated: 2025-10-31
 
 ## Input Ports
 
@@ -215,7 +215,7 @@
 * owner: Open Lifeworlds
 * url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
 * license: CC-BY 4.0
-* updated: 2025-10-29
+* updated: 2025-10-31
 
 **Files**
 
@@ -234,6 +234,17 @@
 * [berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson)
 * [berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson)
 * [berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson)
+
+### Berlin Lor Monitoring Social Urban Development Statistics
+
+* owner: Open Lifeworlds
+* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
+* license: CC-BY 4.0
+* updated: 2025-10-31
+
+**Files**
+
+* [berlin-lor-monitoring-social-urban-development-statistics.json](https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics/berlin-lor-monitoring-social-urban-development-statistics.json)
 
 ## Observability
 

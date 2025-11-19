@@ -52,6 +52,8 @@
 ### Output Ports
 #### berlin-lor-monitoring-social-urban-development-geojson
 * fully qualified name: berlin-lor-monitoring-social-urban-development-geojson
+#### berlin-lor-monitoring-social-urban-development-statistics
+* fully qualified name: berlin-lor-monitoring-social-urban-development-statistics
 
 
 ---
