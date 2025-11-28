@@ -20,34 +20,10 @@
 ## Interface Components
 
 ### Input Ports
-#### berlin-lor-city
-* fully qualified name: berlin-lor-city
-#### berlin-lor-district-regions-from-2021
-* fully qualified name: berlin-lor-district-regions-from-2021
-#### berlin-lor-district-regions-until-2020
-* fully qualified name: berlin-lor-district-regions-until-2020
-#### berlin-lor-districts
-* fully qualified name: berlin-lor-districts
-#### berlin-lor-forecast-areas-from-2021
-* fully qualified name: berlin-lor-forecast-areas-from-2021
-#### berlin-lor-forecast-areas-until-2020
-* fully qualified name: berlin-lor-forecast-areas-until-2020
-#### berlin-lor-planning-areas-from-2021
-* fully qualified name: berlin-lor-planning-areas-from-2021
-#### berlin-lor-planning-areas-until-2020
-* fully qualified name: berlin-lor-planning-areas-until-2020
-#### berlin-lor-matches
-* fully qualified name: berlin-lor-matches
-#### berlin-lor-monitoring-social-urban-development-2013-00-csv
-* fully qualified name: berlin-lor-monitoring-social-urban-development-2013-00-csv
-#### berlin-lor-monitoring-social-urban-development-2015-00-csv
-* fully qualified name: berlin-lor-monitoring-social-urban-development-2015-00-csv
-#### berlin-lor-monitoring-social-urban-development-2017-00-csv
-* fully qualified name: berlin-lor-monitoring-social-urban-development-2017-00-csv
-#### berlin-lor-monitoring-social-urban-development-2019-00-csv
-* fully qualified name: berlin-lor-monitoring-social-urban-development-2019-00-csv
-#### berlin-lor-monitoring-social-urban-development-2021-00-csv
-* fully qualified name: berlin-lor-monitoring-social-urban-development-2021-00-csv
+#### berlin-lor-geodata
+* fully qualified name: berlin-lor-geodata
+#### berlin-lor-monitoring-social-urban-development-aligned
+* fully qualified name: berlin-lor-monitoring-social-urban-development-aligned
 
 ### Output Ports
 #### berlin-lor-monitoring-social-urban-development-geojson
