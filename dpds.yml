@@ -1,25 +1,25 @@
 ---
 dataProductDescriptor: data-product-descriptor
 info:
-  fullyQualifiedName: urn:dpds:openlifeworlds:dataproducts:berlin-lor-monitoring-social-urban-development:1.0
-  name: Berlin LOR Monitoring Social Urban Development
+  fullyQualifiedName: urn:dpds:openlifeworlds:dataproducts:berlin-monitoring-social-urban-development:1.0
+  name: Berlin Monitoring Social Urban Development
   version: '1.0'
   domain: domain
   owner:
     id: Open Lifeworlds
     name: Open Lifeworlds
-  id: berlin-lor-monitoring-social-urban-development
+  id: berlin-monitoring-social-urban-development
   entityType:
-  displayName: Berlin LOR Monitoring Social Urban Development
-  description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
+  displayName: Berlin Monitoring Social Urban Development
+  description: Data product providing Berlin monitoring social urban development data on different hierarchy levels
   contactPoints:
 interfaceComponents:
   outputPorts:
     - promises:
       expectations:
       obligations:
-      id: berlin-lor-monitoring-social-urban-development-geojson
-      fullyQualifiedName: berlin-lor-monitoring-social-urban-development-geojson
+      id: berlin-monitoring-social-urban-development-geojson
+      fullyQualifiedName: berlin-monitoring-social-urban-development-geojson
       entityType:
       name: ''
       version:
@@ -31,8 +31,8 @@ interfaceComponents:
     - promises:
       expectations:
       obligations:
-      id: berlin-lor-monitoring-social-urban-development-statistics
-      fullyQualifiedName: berlin-lor-monitoring-social-urban-development-statistics
+      id: berlin-monitoring-social-urban-development-statistics
+      fullyQualifiedName: berlin-monitoring-social-urban-development-statistics
       entityType:
       name: ''
       version:
@@ -58,8 +58,8 @@ interfaceComponents:
     - promises:
       expectations:
       obligations:
-      id: berlin-lor-monitoring-social-urban-development-aligned
-      fullyQualifiedName: berlin-lor-monitoring-social-urban-development-aligned
+      id: berlin-monitoring-social-urban-development-aligned
+      fullyQualifiedName: berlin-monitoring-social-urban-development-aligned
       entityType:
       name: ''
       version:

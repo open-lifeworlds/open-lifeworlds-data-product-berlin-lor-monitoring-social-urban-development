@@ -1,5 +1,5 @@
 
-# Open Data Product Specification (ODPS) Canvas - Berlin LOR Monitoring Social Urban Development
+# Open Data Product Specification (ODPS) Canvas - Berlin Monitoring Social Urban Development
 
 * schema version: 3.1
 ## Product
@@ -7,15 +7,12 @@
 ### Basic Information
 
 * output file formats: geojson, .json
-* categories: timeseries
-* description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
-* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
-* product ID: berlin-lor-monitoring-social-urban-development
-* product series: Berlin Timeseries Series
+* description: Data product providing Berlin monitoring social urban development data on different hierarchy levels
+* logo URL: https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/logo-with-text.png
+* product ID: berlin-monitoring-social-urban-development
 * status: active
 * tags: berlin, social development, urban development
 * type: source-aligned
-* value proposition: Combining Berlin LOR monitoring social urban development data and geodata
 * version: 1.0
 * visibility: public
 

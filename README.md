@@ -1,15 +1,15 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/issues)
+[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development">
+  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development">
     <img src="logo-with-text.png" alt="Logo" style="height: 80px;">
   </a>
 
-  <h1 align="center">Berlin LOR monitoring social urban development</h1>
+  <h1 align="center">Berlin Monitoring Social Urban Development</h1>
 
   <p align="center">
-    Data product combining Berlin LOR monitoring social urban development data and geodata</a>
+    Data product combining Berlin monitoring social urban development data and geodata
   </p>
 </p>
 
@@ -66,7 +66,7 @@ uv run main.py
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/issues) for a list of proposed features (and
+See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/issues) for a list of proposed features (and
  known issues).
 
 ## License

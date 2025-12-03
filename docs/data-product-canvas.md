@@ -1,13 +1,13 @@
 
-# Data Product Canvas - Berlin LOR Monitoring Social Urban Development
+# Data Product Canvas - Berlin Monitoring Social Urban Development
 
 ## Metadata
 
 * owner: Open Lifeworlds
-* description: Data product providing Berlin monitoring social urban development data on different LOR hierarchy levels
-* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development
+* description: Data product providing Berlin monitoring social urban development data on different hierarchy levels
+* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development
 * license: CC-BY 4.0
-* updated: 2025-11-07
+* updated: 2025-11-09
 
 ## Input Ports
 
@@ -15,9 +15,9 @@
 
 * manifest URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/refs/heads/main/data-product-manifest.yml
 
-### berlin-lor-monitoring-social-urban-development-aligned
+### berlin-monitoring-social-urban-development-aligned
 
-* manifest URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-monitoring-social-urban-development-source-aligned/refs/heads/main/data-product-manifest.yml
+* manifest URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-monitoring-social-urban-development-source-aligned/refs/heads/main/data-product-manifest.yml
 
 ## Transformation Steps
 
@@ -26,42 +26,42 @@
 
 ## Output Ports
 
-### berlin-lor-monitoring-social-urban-development-geojson
-name: Berlin Lor Monitoring Social Urban Development Geojson
+### berlin-monitoring-social-urban-development-geojson
+name: Berlin Monitoring Social Urban Development Geojson
 * owner: Open Lifeworlds
-* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson
+* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/tree/main/data/03-gold/berlin-monitoring-social-urban-development-geojson
 * license: CC-BY 4.0
-* updated: 2025-11-07
+* updated: 2025-11-09
 
 **Files**
 
-* [berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson)
-* [berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson)
-* [berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson)
-* [berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson)
-* [berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson)
-* [berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson)
-* [berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson)
-* [berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson)
-* [berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson)
-* [berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson)
-* [berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson)
-* [berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson)
-* [berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson)
-* [berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson)
-* [berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-geojson/berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson)
+* [berlin-monitoring-social-urban-development-2013-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2013-00-district-regions.geojson)
+* [berlin-monitoring-social-urban-development-2013-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2013-00-districts.geojson)
+* [berlin-monitoring-social-urban-development-2013-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2013-00-planning-areas.geojson)
+* [berlin-monitoring-social-urban-development-2015-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2015-00-district-regions.geojson)
+* [berlin-monitoring-social-urban-development-2015-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2015-00-districts.geojson)
+* [berlin-monitoring-social-urban-development-2015-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2015-00-planning-areas.geojson)
+* [berlin-monitoring-social-urban-development-2017-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2017-00-district-regions.geojson)
+* [berlin-monitoring-social-urban-development-2017-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2017-00-districts.geojson)
+* [berlin-monitoring-social-urban-development-2017-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2017-00-planning-areas.geojson)
+* [berlin-monitoring-social-urban-development-2019-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2019-00-district-regions.geojson)
+* [berlin-monitoring-social-urban-development-2019-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2019-00-districts.geojson)
+* [berlin-monitoring-social-urban-development-2019-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2019-00-planning-areas.geojson)
+* [berlin-monitoring-social-urban-development-2021-00-district-regions.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2021-00-district-regions.geojson)
+* [berlin-monitoring-social-urban-development-2021-00-districts.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2021-00-districts.geojson)
+* [berlin-monitoring-social-urban-development-2021-00-planning-areas.geojson](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-geojson/berlin-monitoring-social-urban-development-2021-00-planning-areas.geojson)
 
 
-### berlin-lor-monitoring-social-urban-development-statistics
-name: Berlin Lor Monitoring Social Urban Development Statistics
+### berlin-monitoring-social-urban-development-statistics
+name: Berlin Monitoring Social Urban Development Statistics
 * owner: Open Lifeworlds
-* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/tree/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics
+* url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/tree/main/data/03-gold/berlin-monitoring-social-urban-development-statistics
 * license: CC-BY 4.0
-* updated: 2025-11-07
+* updated: 2025-11-09
 
 **Files**
 
-* [berlin-lor-monitoring-social-urban-development-statistics.json](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-lor-monitoring-social-urban-development-statistics/berlin-lor-monitoring-social-urban-development-statistics.json)
+* [berlin-monitoring-social-urban-development-statistics.json](https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-monitoring-social-urban-development/refs/heads/main/data/03-gold/berlin-monitoring-social-urban-development-statistics/berlin-monitoring-social-urban-development-statistics.json)
 
 
 ## Observability
@@ -73,21 +73,21 @@ name: Berlin Lor Monitoring Social Urban Development Statistics
 
 | Name | Value |
 | --- | --- |
-| berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson | 67 |
-| berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson | 100 |
-| berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson | 67 |
-| berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson | 67 |
-| berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson | 100 |
-| berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson | 67 |
-| berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson | 33 |
-| berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson | 0 |
-| berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson | 67 |
-| berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson | 0 |
-| berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson | 0 |
-| berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson | 32 |
-| berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson | 0 |
-| berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson | 0 |
-| berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson | 33 |
+| berlin-monitoring-social-urban-development-2013-00-districts.geojson | 100 |
+| berlin-monitoring-social-urban-development-2013-00-district-regions.geojson | 100 |
+| berlin-monitoring-social-urban-development-2013-00-planning-areas.geojson | 100 |
+| berlin-monitoring-social-urban-development-2015-00-districts.geojson | 100 |
+| berlin-monitoring-social-urban-development-2015-00-district-regions.geojson | 100 |
+| berlin-monitoring-social-urban-development-2015-00-planning-areas.geojson | 100 |
+| berlin-monitoring-social-urban-development-2017-00-districts.geojson | 67 |
+| berlin-monitoring-social-urban-development-2017-00-district-regions.geojson | 0 |
+| berlin-monitoring-social-urban-development-2017-00-planning-areas.geojson | 100 |
+| berlin-monitoring-social-urban-development-2019-00-districts.geojson | 42 |
+| berlin-monitoring-social-urban-development-2019-00-district-regions.geojson | 1 |
+| berlin-monitoring-social-urban-development-2019-00-planning-areas.geojson | 66 |
+| berlin-monitoring-social-urban-development-2021-00-districts.geojson | 33 |
+| berlin-monitoring-social-urban-development-2021-00-district-regions.geojson | 0 |
+| berlin-monitoring-social-urban-development-2021-00-planning-areas.geojson | 39 |
 
 
 ## Classification

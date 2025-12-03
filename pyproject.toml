@@ -1,7 +1,7 @@
 [project]
-name = "open-lifeworlds-data-product-berlin-lor-monitoring-social-urban-development"
+name = "open-lifeworlds-data-product-berlin-monitoring-social-urban-development"
 version = "0.1.0"
-description = "Data product combining Berlin LOR monitoring social urban development data and geodata"
+description = "Data product combining Berlin monitoring social urban development data and geodata"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

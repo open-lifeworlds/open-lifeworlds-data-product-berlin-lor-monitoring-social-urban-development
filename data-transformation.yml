@@ -88,100 +88,100 @@ attribute_groups:
     - name: k12_balance_of_migration
     - name: k13_balance_of_migration_of_children_below_6
 input_port_groups:
-  - id: berlin-lor-monitoring-social-urban-development
+  - id: berlin-monitoring-social-urban-development
     input_ports:
-      - id: berlin-lor-monitoring-social-urban-development-2013-00-csv
+      - id: berlin-monitoring-social-urban-development-2013-00-csv
         files:
         - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-districts.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2013-00-districts.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-3-districts.csv, attributes: *2-3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-3-districts.csv, attributes: *3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-3-districts.csv, attributes: *4-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-2-3-districts.csv, attributes: *2-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-3-districts.csv, attributes: *3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-4-3-districts.csv, attributes: *4-3 }
         - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-district-regions.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2013-00-district-regions.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-2-district-regions.csv, attributes: *2-2 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-2-district-regions.csv, attributes: *4-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-2-2-district-regions.csv, attributes: *2-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-4-2-district-regions.csv, attributes: *4-2 }
         - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2013-00-planning-areas.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2013-00-planning-areas.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-1-planning-areas.csv, attributes: *1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv, attributes: *2-1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv, attributes: *4-1 }
-      - id: berlin-lor-monitoring-social-urban-development-2015-00-csv
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-1-planning-areas.csv, attributes: *1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-2-1-planning-areas.csv, attributes: *2-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2013-00-4-1-planning-areas.csv, attributes: *4-1 }
+      - id: berlin-monitoring-social-urban-development-2015-00-csv
         files:
         - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-districts.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2015-00-districts.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-3-districts.csv, attributes: *2-3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-3-districts.csv, attributes: *3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-3-districts.csv, attributes: *4-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-2-3-districts.csv, attributes: *2-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-3-districts.csv, attributes: *3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-4-3-districts.csv, attributes: *4-3 }
         - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-district-regions.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2015-00-district-regions.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-2-district-regions.csv, attributes: *2-2 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-2-district-regions.csv, attributes: *4-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-2-2-district-regions.csv, attributes: *2-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-4-2-district-regions.csv, attributes: *4-2 }
         - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2015-00-planning-areas.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2015-00-planning-areas.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-1-planning-areas.csv, attributes: *1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv, attributes: *2-1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv, attributes: *4-1 }
-      - id: berlin-lor-monitoring-social-urban-development-2017-00-csv
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-1-planning-areas.csv, attributes: *1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-2-1-planning-areas.csv, attributes: *2-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2015-00-4-1-planning-areas.csv, attributes: *4-1 }
+      - id: berlin-monitoring-social-urban-development-2017-00-csv
         files:
         - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-districts.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2017-00-districts.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-3-districts.csv, attributes: *2-3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-3-districts.csv, attributes: *3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-3-districts.csv, attributes: *4-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-2-3-districts.csv, attributes: *2-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-3-districts.csv, attributes: *3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-4-3-districts.csv, attributes: *4-3 }
         - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-district-regions.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2017-00-district-regions.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-2-district-regions.csv, attributes: *2-2 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-2-district-regions.csv, attributes: *4-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-2-2-district-regions.csv, attributes: *2-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-4-2-district-regions.csv, attributes: *4-2 }
         - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2017-00-planning-areas.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2017-00-planning-areas.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-1-planning-areas.csv, attributes: *1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv, attributes: *2-1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv, attributes: *4-1 }
-      - id: berlin-lor-monitoring-social-urban-development-2019-00-csv
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-1-planning-areas.csv, attributes: *1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-2-1-planning-areas.csv, attributes: *2-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2017-00-4-1-planning-areas.csv, attributes: *4-1 }
+      - id: berlin-monitoring-social-urban-development-2019-00-csv
         files:
         - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-districts.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2019-00-districts.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-3-districts.csv, attributes: *2-3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-3-districts.csv, attributes: *3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-3-districts.csv, attributes: *4-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-2-3-districts.csv, attributes: *2-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-3-districts.csv, attributes: *3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-4-3-districts.csv, attributes: *4-3 }
         - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-district-regions.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2019-00-district-regions.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-2-district-regions.csv, attributes: *2-2 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-2-district-regions.csv, attributes: *4-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-2-2-district-regions.csv, attributes: *2-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-4-2-district-regions.csv, attributes: *4-2 }
         - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2019-00-planning-areas.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2019-00-planning-areas.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-1-planning-areas.csv, attributes: *1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv, attributes: *2-1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv, attributes: *4-1 }
-      - id: berlin-lor-monitoring-social-urban-development-2021-00-csv
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-1-planning-areas.csv, attributes: *1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-2-1-planning-areas.csv, attributes: *2-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2019-00-4-1-planning-areas.csv, attributes: *4-1 }
+      - id: berlin-monitoring-social-urban-development-2021-00-csv
         files:
         - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-districts.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2021-00-districts.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-3-districts.csv, attributes: *2-3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-3-districts.csv, attributes: *3 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-3-districts.csv, attributes: *4-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-2-3-districts.csv, attributes: *2-3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-3-districts.csv, attributes: *3 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-4-3-districts.csv, attributes: *4-3 }
         - geojson_template_file_name: berlin-lor-district-regions-from-2021/berlin-lor-district-regions-from-2021.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-district-regions.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2021-00-district-regions.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-2-district-regions.csv, attributes: *2-2 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-2-district-regions.csv, attributes: *4-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-2-2-district-regions.csv, attributes: *2-2 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-4-2-district-regions.csv, attributes: *4-2 }
         - geojson_template_file_name: berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson
-          target_file_name: berlin-lor-monitoring-social-urban-development-2021-00-planning-areas.geojson
+          target_file_name: berlin-monitoring-social-urban-development-2021-00-planning-areas.geojson
           source_files:
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-1-planning-areas.csv, attributes: *1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv, attributes: *2-1 }
-            - { source_file_name: berlin-lor-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv, attributes: *4-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-1-planning-areas.csv, attributes: *1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-2-1-planning-areas.csv, attributes: *2-1 }
+            - { source_file_name: berlin-monitoring-social-urban-development-2021-00-4-1-planning-areas.csv, attributes: *4-1 }
